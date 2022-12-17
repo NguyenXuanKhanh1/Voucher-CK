@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!-- 
+        Microsoft ResX Schema
+
+        Version 1.3
+
+        The primary goals of this format is to allow a simple XML format 
+        that is mostly human readable. The generation and parsing of the 
+        various data types are done through the TypeConverter classes 
+        associated with the data types.
+
+        Example:
+
+        ... ado.net/XML headers & schema ...
+        <resheader name="resmimetype">text/microsoft-resx</resheader>
+        <resheader name="version">1.3</resheader>
+        <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+        <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+        <data name="Name1">this is my long string</data>
+        <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+        <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+            [base64 mime encoded serialized .NET Framework object]
+        </data>
+        <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+            [base64 mime encoded string representing a byte array form of the .NET Framework object]
+        </data>
+
+        There are any number of "resheader" rows that contain simple 
+        name/value pairs.
+
+        Each data row contains a name, and value. The row also contains a 
+        type or mimetype. Type corresponds to a .NET class that support 
+        text/value conversion through the TypeConverter architecture. 
+        Classes that don't support this are serialized and stored with the 
+        mimetype set.
+
+        The mimetype is used for serialized objects, and tells the 
+        ResXResourceReader how to depersist the object. This is currently not 
+        extensible. For a given mimetype the value must be set accordingly:
+
+        Note - application/x-microsoft.net.object.binary.base64 is the format 
+        that the ResXResourceWriter will generate, however the reader can 
+        read any of the formats listed below.
+
+        mimetype: application/x-microsoft.net.object.binary.base64
+        value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+        mimetype: application/x-microsoft.net.object.soap.base64
+        value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+        mimetype: application/x-microsoft.net.object.bytearray.base64
+        value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root" xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="Active" xml:space="preserve">
+        <value>Active</value>
+    </data>
+    <data name="BankInformation" xml:space="preserve">
+        <value>Bank account information</value>
+    </data>
+    <data name="BANK_TRANSFER" xml:space="preserve">
+        <value>Transfer banking</value>
+    </data>
+    <data name="BatteryPackage" xml:space="preserve">
+        <value>Battery leasing package</value>
+    </data>
+    <data name="BatterySubscription" xml:space="preserve">
+        <value>Battery leasing subscription</value>
+    </data>
+    <data name="BATTERY_CHARGING" xml:space="preserve">
+        <value>Charging</value>
+    </data>
+    <data name="BATTERY_CHARGING_OTHER_FEES" xml:space="preserve">
+        <value>Charging (other fees)</value>
+    </data>
+    <data name="BATTERY_CHARGING_OTHER_FEES_ADJUSTMENT" xml:space="preserve">
+        <value>Adjustment for charging (other fees)</value>
+    </data>
+    <data name="BATTERY_LEASING" xml:space="preserve">
+        <value>Leasing</value>
+    </data>
+    <data name="BATTERY_LEASING_OTHER_FEES" xml:space="preserve">
+        <value>Leasing (other fees)</value>
+    </data>
+    <data name="BATTERY_LEASING_OTHER_FEES_ADJUSTMENT" xml:space="preserve">
+        <value>Adjustment for leasing (other fees)</value>
+    </data>
+    <data name="BATTERY_PAYMENT_ARREARS" xml:space="preserve">
+        <value>Arrears fee</value>
+    </data>
+    <data name="BATTERY_PAYMENT_ARREARS_ADJUSTMENT" xml:space="preserve">
+        <value>Adjustment for arrears fee</value>
+    </data>
+    <data name="BATTERY_PROBLEMS_FEE" xml:space="preserve">
+        <value>Battery problem fees</value>
+    </data>
+    <data name="BATTERY_PROBLEMS_FEE_ADJUSTMENT" xml:space="preserve">
+        <value>Adjustment for battery problem fees</value>
+    </data>
+    <data name="BILL_CHARGING_ADJUSTMENT_FEE" xml:space="preserve">
+        <value>Adjustment for charging</value>
+    </data>
+    <data name="BILL_LEASING_ADJUSTMENT_FEE" xml:space="preserve">
+        <value>Adjustment for leasing</value>
+    </data>
+    <data name="Cancelled" xml:space="preserve">
+        <value>Cancelled</value>
+    </data>
+    <data name="CARD_PAYMENT" xml:space="preserve">
+        <value>Debit/ credit card</value>
+    </data>
+    <data name="CASH" xml:space="preserve">
+        <value>Cash</value>
+    </data>
+    <data name="ChargeCompleted" xml:space="preserve">
+        <value>Charged</value>
+    </data>
+    <data name="Charging" xml:space="preserve">
+        <value>Charging</value>
+    </data>
+    <data name="ChargingConfiguration" xml:space="preserve">
+        <value>Charging fee config</value>
+    </data>
+    <data name="Completed" xml:space="preserve">
+        <value>Completed</value>
+    </data>
+    <data name="Deactivate" xml:space="preserve">
+        <value>Deactivated</value>
+    </data>
+    <data name="Error" xml:space="preserve">
+        <value>Error</value>
+    </data>
+    <data name="EsChargingBillTitle" xml:space="preserve">
+        <value>{0} charging bill</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_CHARGING" xml:space="preserve">
+        <value>E-scooter charging</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_CHARGING_ADJUSTMENT" xml:space="preserve">
+        <value>E-scooter charging (other fees)</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_LEASING" xml:space="preserve">
+        <value>E-scooter leasing</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_LEASING_ADJUSTMENT" xml:space="preserve">
+        <value>E-scooter leasing (other fees)</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_PAYMENT_ARREARS" xml:space="preserve">
+        <value>Escooter arrears fee</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_PAYMENT_ARREARS_ADJUSTMENT" xml:space="preserve">
+        <value>Adjustment for arrears fee</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_PROBLEMS_FEE" xml:space="preserve">
+        <value>Escooter battery problem fee</value>
+    </data>
+    <data name="ESCOOTER_BATTERY_PROBLEMS_FEE_ADJUSTMENT" xml:space="preserve">
+        <value>Adjustment for escooter battery problem fee</value>
+    </data>
+    <data name="EsLeasingBillTitle" xml:space="preserve">
+        <value>{0} battery leasing bill</value>
+    </data>
+    <data name="F1" xml:space="preserve">
+        <value>F1 - Revenue</value>
+    </data>
+    <data name="F2" xml:space="preserve">
+        <value>F2 - Payment</value>
+    </data>
+    <data name="F3" xml:space="preserve">
+        <value>F3 - Pre-paid revenue</value>
+    </data>
+    <data name="F5" xml:space="preserve">
+        <value>F5 - Update invoice</value>
+    </data>
+    <data name="F6" xml:space="preserve">
+        <value>F6 - Re-allocate revenue</value>
+    </data>
+    <data name="Fixed" xml:space="preserve">
+        <value>Fixed price</value>
+    </data>
+    <data name="Flexible" xml:space="preserve">
+        <value>Flexible price</value>
+    </data>
+    <data name="INACTIVE" xml:space="preserve">
+        <value>Inactive</value>
+    </data>
+    <data name="Init" xml:space="preserve">
+        <value>Initializing</value>
+    </data>
+    <data name="INTERNALPAY" xml:space="preserve">
+        <value>Operating costs</value>
+    </data>
+    <data name="Job" xml:space="preserve">
+        <value>Headless job</value>
+    </data>
+    <data name="Noshow" xml:space="preserve">
+        <value>No show</value>
+    </data>
+    <data name="NotSelfBooking" xml:space="preserve">
+        <value>Walk-in guest</value>
+    </data>
+    <data name="ONEPAY" xml:space="preserve">
+        <value>Onepay</value>
+    </data>
+    <data name="Onhold" xml:space="preserve">
+        <value>On hold</value>
+    </data>
+    <data name="Open" xml:space="preserve">
+        <value>Open</value>
+    </data>
+    <data name="PaidStatus" xml:space="preserve">
+        <value>Paid</value>
+    </data>
+    <data name="PayBill" xml:space="preserve">
+        <value>Pay</value>
+    </data>
+    <data name="PenaltyConfiguration" xml:space="preserve">
+        <value>Penalty configuration</value>
+    </data>
+    <data name="Permission" xml:space="preserve">
+        <value>Permission</value>
+    </data>
+    <data name="PolicyPackage" xml:space="preserve">
+        <value>Policy Packages</value>
+    </data>
+    <data name="PROMOTION" xml:space="preserve">
+        <value>Promotion</value>
+    </data>
+    <data name="Role" xml:space="preserve">
+        <value>Role</value>
+    </data>
+    <data name="SelfBooking" xml:space="preserve">
+        <value>Pre-book</value>
+    </data>
+    <data name="SUCCESS" xml:space="preserve">
+        <value>Success</value>
+    </data>
+    <data name="Terminated" xml:space="preserve">
+        <value>Terminated</value>
+    </data>
+    <data name="UnPaidStatus" xml:space="preserve">
+        <value>Not paid</value>
+    </data>
+    <data name="UserPermission" xml:space="preserve">
+        <value>User</value>
+    </data>
+    <data name="Whitelist" xml:space="preserve">
+        <value>Whitelist</value>
+    </data>
+</root>

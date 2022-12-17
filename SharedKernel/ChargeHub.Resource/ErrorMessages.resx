@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BatterySubscriptionCustomerIdRequired" xml:space="preserve">
+    <value>Bạn chưa chọn khách hàng.</value>
+  </data>
+  <data name="BatterySubscriptionFullNameRequired" xml:space="preserve">
+    <value>Bạn chưa nhập họ tên khách hàng.</value>
+  </data>
+  <data name="BatterySubscriptionPackageRequired" xml:space="preserve">
+    <value>Bạn chưa chọn gói cước.</value>
+  </data>
+  <data name="BatterySubscriptionVehicleIdRequired" xml:space="preserve">
+    <value>Bạn chưa chọn xe.</value>
+  </data>
+  <data name="CreatedError" xml:space="preserve">
+    <value>Có lỗi khi tạo {0}.</value>
+  </data>
+  <data name="GeneralError" xml:space="preserve">
+    <value>Có lỗi xảy ra.</value>
+  </data>
+  <data name="NotExist" xml:space="preserve">
+    <value>{0} không tồn tại</value>
+  </data>
+  <data name="UpdatedError" xml:space="preserve">
+    <value>Có lỗi khi cập nhật {0}.</value>
+  </data>
+  <data name="UNDEFINED_MESSAGE" xml:space="preserve">
+    <value>Message was not defined yet</value>
+  </data>
+  <data name="ExistedSubscriptionByVehicle" xml:space="preserve">
+    <value>Xe này đã có hợp đồng thuê pin.</value>
+  </data>
+  <data name="ChargingConfigurationAppliedDate" xml:space="preserve">
+    <value>Ngày áp dụng không được để trống hoặc nhỏ hơn ngày hiện tại</value>
+  </data>
+  <data name="ChargingConfigurationAppliedPrice" xml:space="preserve">
+    <value>Giá áp dụng phải lớn hơn 0</value>
+  </data>
+  <data name="PenaltyConfigurationAppliedDate" xml:space="preserve">
+    <value>Ngày áp dụng không được để trống hoặc nhỏ hơn ngày hiện tại</value>
+  </data>
+  <data name="PenaltyConfigurationAppliedPrice" xml:space="preserve">
+    <value>Giá áp dụng phải lớn hơn 0</value>
+  </data>
+  <data name="PenaltyConfigurationChargingStationId" xml:space="preserve">
+    <value>Bạn chưa chọn trạm sạc</value>
+  </data>
+  <data name="PenaltyConfigurationPenaltyConfigurationType" xml:space="preserve">
+    <value>Bạn chưa chọn phí phạt</value>
+  </data>
+  <data name="INVOICE_SAP_JOB_FAILED" xml:space="preserve">
+    <value>Xuất hoá đơn bị lỗi</value>
+  </data>
+  <data name="GeneralNotDefinedError" xml:space="preserve">
+    <value>Đã có lỗi xảy ra. </value>
+  </data>
+  <data name="GeneralNotDefinedErrorWithParam" xml:space="preserve">
+    <value>Đã có lỗi xảy ra {0} </value>
+  </data>
+  <data name="UNPAID_DEBT_LEASING_2106" xml:space="preserve">
+    <value>Đang nợ cước thuê pin</value>
+  </data>
+  <data name="BatterySubscriptionNotFoundPackageId" xml:space="preserve">
+    <value>Không tìm thấy gói cước tương ứng với mẫu xe</value>
+  </data>
+  <data name="BatterySubscriptionContractNoExists" xml:space="preserve">
+    <value>Số hợp đồng đã tồn tại</value>
+  </data>
+  <data name="NOT_ALLOW_CREATE_CONTRACT_WITHOUT_SUBCONTRACT" xml:space="preserve">
+    <value>Không thể tạo hợp đồng mà không đồng ý với phụ lục hợp đồng </value>
+  </data>
+  <data name="BatterySubscriptionVehicleIdExists" xml:space="preserve">
+    <value>Xe đã tồn tại hợp đồng hoạt động</value>
+  </data>
+  <data name="INVALID_INPUT_ODO" xml:space="preserve">
+    <value>Odo input nhỏ hơn odo đầu tháng</value>
+  </data>
+  <data name="AlreadyExists" xml:space="preserve">
+    <value>Đã tồn tại {0}.</value>
+  </data>
+  <data name="UserPermissionUpdateOtherUserError" xml:space="preserve">
+    <value>Bạn chỉ được cập nhật tài khoản của mình.</value>
+  </data>
+  <data name="BankAccountInformationExists" xml:space="preserve">
+    <value>Thông tin tài khoản ngân hàng đã tồn tại.</value>
+  </data>
+  <data name="TRANSACTION_ID_REQUIRED" xml:space="preserve">
+    <value>Yêu cầu nhập mã giao dịch</value>
+  </data>
+  <data name="STORE_INFO_REQUIRED" xml:space="preserve">
+    <value>Thông tin cửa hàng là bắt buộc</value>
+  </data>
+  <data name="BANK_ACCOUNT_INFO_REQUIRED" xml:space="preserve">
+    <value>Yêu cầu nhập thông tin tài khoản Ngân hàng.</value>
+  </data>
+  <data name="INVALID_CUSTOMER_ID" xml:space="preserve">
+    <value>Mã KH không hợp lệ.</value>
+  </data>
+  <data name="INVALID_VEHICLE_ID" xml:space="preserve">
+    <value>Mã phương tiện không hợp lệ.</value>
+  </data>
+  <data name="HASHKEY_NOT_FOUND_5005" xml:space="preserve">
+    <value>Không tìm thấy hashkey.</value>
+  </data>
+  <data name="INVALID_STATUS" xml:space="preserve">
+    <value>Thông tin trạng thái không hợp lệ.</value>
+  </data>
+  <data name="INVALID_BIN_CODE" xml:space="preserve">
+    <value>Bin code không hợp lệ</value>
+  </data>
+  <data name="INVALID_CARD_NUMBER" xml:space="preserve">
+    <value>Số thẻ không hợp lệ</value>
+  </data>
+  <data name="INVALID_ORDER_INFO" xml:space="preserve">
+    <value>Thông tin đặt hàng không hợp lệ.</value>
+  </data>
+  <data name="INVALID_TRASACTION_ID" xml:space="preserve">
+    <value>Mã giao dịch không hợp lệ.</value>
+  </data>
+  <data name="INVALID_STORE_INFO" xml:space="preserve">
+    <value>Thông tin cửa hàng không hợp lệ</value>
+  </data>
+  <data name="INVALID_INVOICE_INFO" xml:space="preserve">
+    <value>Thông tin hoá đơn GTGT không hợp lệ</value>
+  </data>
+  <data name="INVALID_PERSONAL_INFO" xml:space="preserve">
+    <value>Thông tin cá nhân không hợp lệ</value>
+  </data>
+  <data name="INVALID_COMPANY_INFO" xml:space="preserve">
+    <value>Thông tin công ty không hợp lệ.</value>
+  </data>
+  <data name="INVALID_REPRESENTATIVE_INFO" xml:space="preserve">
+    <value>Thông tin người đại diện không hợp lệ.</value>
+  </data>
+  <data name="PRIMARY_KEY_SPEC_NOTFOUND" xml:space="preserve">
+    <value>Thông tin khoá chính không hợp lệ.</value>
+  </data>
+  <data name="INVALID_SPECIFICATION" xml:space="preserve">
+    <value>Tham số tìm kiếm không hợp lệ.</value>
+  </data>
+  <data name="INVALID_PAGING" xml:space="preserve">
+    <value>Thông tin phân trang không hợp lệ.</value>
+  </data>
+  <data name="FINDBY_SPEC_ERROR" xml:space="preserve">
+    <value>Có lỗi xảy ra khi tìm dữ liệu</value>
+  </data>
+  <data name="GETBY_SPEC_ERROR" xml:space="preserve">
+    <value>Có lỗi xảy ra khi tìm dữ liệu</value>
+  </data>
+  <data name="COUNTBY_SPEC_ERROR" xml:space="preserve">
+    <value>Có lỗi khi tính toán tổng số bản ghi</value>
+  </data>
+  <data name="INSERT_DOC_ERROR" xml:space="preserve">
+    <value>Có lỗi xảy ra khi thêm dữ liệu.</value>
+  </data>
+  <data name="UPDATE_DOC_ERROR" xml:space="preserve">
+    <value>Có lỗi xảy ra khi cập nhật dữ liệu.</value>
+  </data>
+  <data name="DELETE_DOC_ERROR" xml:space="preserve">
+    <value>Có lỗi xảy ra khi xoá dữ liệu.</value>
+  </data>
+  <data name="INVALID_IDS" xml:space="preserve">
+    <value>Mã dữ liệu không hợp lệ.</value>
+  </data>
+  <data name="LOCK_BILL_TIMEOUT_EXCEED" xml:space="preserve">
+    <value>Hết thời gian tạm khoá hoá đơn.</value>
+  </data>
+  <data name="SEARCH_DMS_SHOWROOM_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi tìm kiếm SR.</value>
+  </data>
+  <data name="PostBatterySubscriptionFailed" xml:space="preserve">
+    <value>Có lỗi xảy ra khi gửi dữ liệu sang DMS.</value>
+  </data>
+  <data name="LiquidateBatterySubscriptionFailed" xml:space="preserve">
+    <value>Có lỗi xảy ra khi thanh lý hợp đồng thuê pin.</value>
+  </data>
+  <data name="SAP_CALLBACK_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi SAP callback.</value>
+  </data>
+  <data name="SYCN_TO_SAP_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi đồng bộ xuống SAP</value>
+  </data>
+  <data name="ESCOOTER_INVOICE_SAP_JOB_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi thực thi tác vụ.</value>
+  </data>
+  <data name="PENALTY_ARREARS_JOB_FAILED" xml:space="preserve">
+    <value>Job phí phạt trả chậm bị lỗi.</value>
+  </data>
+  <data name="CREATE_LEASING_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi tạo hợp đồng</value>
+  </data>
+  <data name="CLOSE_LEASING_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi đóng hợp đồng thuê pin.</value>
+  </data>
+  <data name="UPDATE_CHARGINGSTATION_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi cập nhật dữ liệu trụ sạc.</value>
+  </data>
+  <data name="INVALID_ES_PAID_CODE" xml:space="preserve">
+    <value>Mã thanh toán xe máy điện không hợp lệ.</value>
+  </data>
+  <data name="INVALID_ES_PAID_DATE" xml:space="preserve">
+    <value>Dữ liệu thời gian thanh toán không hợp lệ.</value>
+  </data>
+  <data name="BATTERY_PACKAGE_EXISTED" xml:space="preserve">
+    <value>Gói thuê pin đã tồn tại</value>
+  </data>
+  <data name="INVALID_CHARGINGSTATIONS_LIST" xml:space="preserve">
+    <value>Danh sách trụ sac không hợp lệ</value>
+  </data>
+  <data name="EXCEED_MAX_LENGTH" xml:space="preserve">
+    <value>Vượt quá độ dài do phép.</value>
+  </data>
+  <data name="NOT_SUPPORTED_LANGUAGE" xml:space="preserve">
+    <value>Ngôn ngữ ko được hỗ trợ.</value>
+  </data>
+  <data name="BILL_ID_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy số hoá đơn</value>
+  </data>
+  <data name="VOUCHER_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy hoá đơn</value>
+  </data>
+  <data name="INVOICE_INFO_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy thông tin xuấthoá đơn.</value>
+  </data>
+  <data name="SAP_TRANSACTION_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy mã giao dịch SAP.</value>
+  </data>
+  <data name="MULTILINGUAL_DATA_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy dữ liệu đa ngôn ngữ</value>
+  </data>
+  <data name="BILL_ADJUSTMENT_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy hoá đơn điều chỉnh</value>
+  </data>
+  <data name="CUSTOMER_INFO_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy thông tin khách hàng.</value>
+  </data>
+  <data name="EXECUTE_JOB_FAILED" xml:space="preserve">
+    <value>Có lỗi xảy ra khi thực thi tác vụ.</value>
+  </data>
+  <data name="CONTRACTNO_ALREADY_EXISTS" xml:space="preserve">
+    <value>Số hợp đồng đã tồn tại</value>
+  </data>
+  <data name="BATTERY_SUBSCRIPTION_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy thông tin hợp đồng thuê pin.</value>
+  </data>
+  <data name="INVALID_INPUT_AMOUNT_ADJUSTMENT" xml:space="preserve">
+    <value>Tổng số tiền điều chỉnh và số tiền gốc phải lớn hơn 0.</value>
+  </data>
+  <data name="INVALID_BILL_ADJUSTMENT" xml:space="preserve">
+    <value>Không thể điều chỉnh hóa đơn điều chỉnh.</value>
+  </data>
+  <data name="INVALID_BILL_AMOUNT" xml:space="preserve">
+    <value>Tổng số tiền thanh toán phải lớn hơn 0.</value>
+  </data>
+  <data name="TERNINATE_CONTRACT_SAP_FAILED" xml:space="preserve">
+    <value>Có lỗi khi huỷ hợp đồng trên SAP: {0}</value>
+  </data>
+  <data name="BatterySubscriptionContractNoRequired" xml:space="preserve">
+    <value>Bạn chưa nhập thông tin mã hợp đồng</value>
+  </data>
+  <data name="BatterySubscriptionSapCustomerIdRequired" xml:space="preserve">
+    <value>Bạn chưa nhập thông tin mã khách hàng SAP</value>
+  </data>
+  <data name="REQUEST_ADJUSTMENT_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy yêu cầu điều chỉnh.</value>
+  </data>
+  <data name="INVALID_BILL_ID" xml:space="preserve">
+    <value>Mã đơn hàng không hợp lệ.</value>
+  </data>
+  <data name="INVALID_INFO_VALID" xml:space="preserve">
+    <value>Không thể thay đổi trạng thái xác nhận thông tin hợp lệ nếu đã được xác nhận trước đó</value>
+  </data>
+  <data name="CAN_NOT_UNSIGN_SUBCONTRACT" xml:space="preserve">
+    <value>Không thể thay đổi trạng thái ký phụ lục hợp đồng nếu đã ký hợp đồng trước đó</value>
+  </data>
+</root>

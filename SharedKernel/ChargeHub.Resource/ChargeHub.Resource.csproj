@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Platforms>AnyCPU;x86</Platforms>
+	</PropertyGroup>
+
+    <ItemGroup>
+        <Compile Update="ErrorMessages.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>ErrorMessages.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Label.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Label.resx</DependentUpon>
+        </Compile>
+        <Compile Update="SuccessMessages.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>SuccessMessages.resx</DependentUpon>
+        </Compile>
+        <Compile Update="MainResource.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>MainResource.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="ErrorMessages.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Label.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <LastGenOutput>Label.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="SuccessMessages.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <LastGenOutput>SuccessMessages.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="MainResource.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>MainResource.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="MainResource.en-us.resx">
+          <DependentUpon>MainResource.resx</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Update="ErrorMessages.en-US.resx">
+          <DependentUpon>ErrorMessages.resx</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Label.en-US.resx">
+          <DependentUpon>Label.resx</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Update="SuccessMessages.en-US.resx">
+          <DependentUpon>SuccessMessages.resx</DependentUpon>
+        </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
