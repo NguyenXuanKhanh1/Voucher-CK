@@ -54,9 +54,9 @@ namespace VoucherCK.Api
                 {
                     options.SwaggerDoc("v1", new OpenApiInfo
                     {
-                        Title = "ChargeHub Escooter Integration Api(s)",
+                        Title = "Voucher Promotion API(s)",
                         Version = "v1",
-                        Description = "ChargeHub Escooter Integration Services"
+                        Description = "Voucher Promotion Services"
                     });
                     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                     {
@@ -105,7 +105,7 @@ namespace VoucherCK.Api
             }
 
             app.UseForwardedHeaders();
-            //app.UseCors();
+            app.UseCors();
 
             app.UseStaticFiles();
             app.UseRouting();
