@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.OpenApi.Models;
+using System.Runtime.InteropServices;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using VoucherCK.Api.IoC.NativeInjector;
@@ -91,6 +93,7 @@ namespace VoucherCK.Api
             });
 
             services.AddHealthChecks();
+
         }
 
         public void Configure(IApplicationBuilder app)
