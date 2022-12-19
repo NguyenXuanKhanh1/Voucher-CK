@@ -47,7 +47,7 @@ namespace VoucherCK.Application.DomainServices.Impls
                 IsWarrior = Convert.ToInt32(rtrNPlay.ToString()),
                 Result = 0
             };
-            logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},{barcode},Success,{result.StoreCode},{result.PrizeCode},";
+            logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{barcode},Success,{result.StoreCode},{result.PrizeCode},";
             await WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
             return result;
