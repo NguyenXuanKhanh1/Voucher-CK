@@ -4,7 +4,6 @@ using VoucherCK.Application.DomainServices.Interfaces;
 using VoucherCK.Application.DTOs;
 using VoucherCK.SharedKernel.Error;
 using VoucherCK.SharedKernel.Exceptions;
-using VoucherCK.Utility;
 
 namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
 {
@@ -22,13 +21,9 @@ namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
             Thread.CurrentThread.CurrentCulture = new CultureInfo("vi-VN");
             if (request.BarCode.Length != 16)
             {
-                var currentDate = DateTime.Now;
-                var logContent = $"[{currentDate.ToString("yyyy-MM-dd HH:mm:ss")}]  BarCode: {request.BarCode} is invalid format";
-                await WriteFileHelper.WriteFileHelperAsync(logContent);
-
                 throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.INVALID_BARCODE));
             }
-            var result = await _decodeVoucherDomainService.GetVoucherResult(request.BarCode);
+            var result = await _decodeVoucherDomainService.GetVoucherResult(request.BarCode, request.LinkFile);
             return result;
         }
     }

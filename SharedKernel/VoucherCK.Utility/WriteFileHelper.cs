@@ -2,10 +2,10 @@
 {
     public class WriteFileHelper
     {
-        public static async Task WriteFileHelperAsync(string data)
+        public static async Task WriteFileHelperAsync(string data, string linkFile)
         {
-            string pathString = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Logs");
-            string fileName = DateTime.Now.ToString("yyyy-MM-dd") + ".txt";
+            string pathString = linkFile;
+            string fileName = DateTime.Now.ToString("yyyy-MM-dd") + ".csv";
 
             System.IO.Directory.CreateDirectory(pathString);
             pathString = Path.Combine(pathString, fileName);
@@ -13,6 +13,8 @@
             if (!File.Exists(pathString))
             {
                 using StreamWriter file = new(pathString);
+                var template = "Time,BarCode,Status,StoreCode,PrizeCode";
+                await file.WriteLineAsync(template);
                 await file.WriteLineAsync(data);
             }
             else

@@ -10,17 +10,21 @@ namespace VoucherCK.Api.Controllers
     [ApiController]
     public class DecodeVoucherController : BaseController
     {
-        private readonly IMediator _mediator;
+        private readonly IMediator _mediator; 
+        private readonly IConfiguration _configuration;
 
-        public DecodeVoucherController(IMediator mediator)
+        public DecodeVoucherController(IMediator mediator, IConfiguration configuration)
         {
             _mediator = mediator;
+            _configuration = configuration;
         }
 
         [HttpPost("decode")]
         public async Task<object> DecodeVoucherAsync([FromBody] DecodeRequest request)
         {
-            var response = await _mediator.Send(new DecodeVoucherCommand(request.BarCode));
+            var linkFile = _configuration["FilePath"];
+
+            var response = await _mediator.Send(new DecodeVoucherCommand(request.BarCode, linkFile));
             return Ok(response);
         }
     }

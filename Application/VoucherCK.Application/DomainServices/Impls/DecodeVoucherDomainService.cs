@@ -19,7 +19,7 @@ namespace VoucherCK.Application.DomainServices.Impls
         [DllImport("DeCode.dll", CallingConvention = CallingConvention.Cdecl, EntryPoint = "deCode16", CharSet = CharSet.Ansi)]
         public static extern int deCode16(string serial, StringBuilder rtrStore, StringBuilder rtrPrizeCode, StringBuilder rtrNPlay);
 
-        public async Task<VoucherResultDto> GetVoucherResult(string barcode)
+        public async Task<VoucherResultDto> GetVoucherResult(string barcode, string linkFile)
         {
             var currentDate = DateTime.Now;
 
@@ -33,10 +33,9 @@ namespace VoucherCK.Application.DomainServices.Impls
 
             if (deCodeVoucherResult != 0)
             {
-                logContent = $"[{currentDate.ToString("yyyy-MM-dd HH:mm:ss")}]  BarCode: {barcode} is not applied promotion";
+                logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},{barcode},Fail,N/A,N/A";
+                await WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
-                logContent = string.Format(logContent, barcode);
-                await WriteFileHelper.WriteFileHelperAsync(logContent);
                 throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.VOUCHER_NOTFOUND));
             }
 
@@ -48,10 +47,8 @@ namespace VoucherCK.Application.DomainServices.Impls
                 IsWarrior = Convert.ToInt32(rtrNPlay.ToString()),
                 Result = 0
             };
-
-            logContent = $"[{currentDate.ToString("yyyy-MM-dd HH:mm:ss")}]  BarCode: {barcode} is applied promotion at StoreCode - {result.StoreCode}";
-
-            await WriteFileHelper.WriteFileHelperAsync(logContent);
+            logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},{barcode},Success,{result.StoreCode},{result.PrizeCode}";
+            await WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
             return result;
         }
