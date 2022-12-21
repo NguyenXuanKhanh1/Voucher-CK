@@ -5,6 +5,7 @@ namespace VoucherCK.Application.DTOs
     public class VoucherResultDto
     {
         public string BarCode { get; set; }
+        public string Voucher { get; set; }
         [JsonPropertyName("rtrStore")]
         public string StoreCode { get; set; }
         [JsonPropertyName("rtrPrizeCode")]

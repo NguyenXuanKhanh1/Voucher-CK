@@ -11,6 +11,15 @@ namespace VoucherCK.Application
     [Table("BarCodeRedeems")]
     public class BarCodeRedeems
     {
+        public static object Lock = new object();
+        public BarCodeRedeems(string id, string barcode, string voucher, DateTime redeemAt)
+        {
+            Id = id;
+            Barcode = barcode;
+            Voucher = voucher;
+            RedeemAt = redeemAt;
+        }
+
         [Key]
         [Column("id")]
         public string Id { get; set; }

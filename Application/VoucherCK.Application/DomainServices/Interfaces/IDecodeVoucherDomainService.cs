@@ -9,6 +9,6 @@ namespace VoucherCK.Application.DomainServices.Interfaces
 {
     public interface IDecodeVoucherDomainService
     {
-        Task<VoucherResultDto> GetVoucherResult(string barcode, string linkFile);
+        Task<VoucherResultDto> GetVoucherResult(string barcode);
     }
 }

@@ -22,9 +22,7 @@ namespace VoucherCK.Api.Controllers
         [HttpPost("decode")]
         public async Task<object> DecodeVoucherAsync([FromBody] DecodeRequest request)
         {
-            var linkFile = _configuration["FilePath"];
-
-            var response = await _mediator.Send(new DecodeVoucherCommand(request.BarCode, linkFile));
+            var response = await _mediator.Send(new DecodeVoucherCommand(request.BarCode));
             return Ok(response);
         }
     }
