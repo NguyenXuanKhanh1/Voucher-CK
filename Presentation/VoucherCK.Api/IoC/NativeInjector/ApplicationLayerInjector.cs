@@ -1,4 +1,5 @@
-﻿using VoucherCK.Application.Extensions;
+﻿using VoucherCK.Application;
+using VoucherCK.Application.Extensions;
 
 namespace VoucherCK.Api.IoC.NativeInjector
 {

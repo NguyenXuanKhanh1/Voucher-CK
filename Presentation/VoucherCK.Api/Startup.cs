@@ -6,7 +6,10 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using VoucherCK.Api.IoC.NativeInjector;
 using VoucherCK.Api.Middlewares;
+using VoucherCK.Application;
 using VoucherCK.SharedKernel.Helpers;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace VoucherCK.Api
 {
@@ -37,12 +40,16 @@ namespace VoucherCK.Api
                     });
             });
 
+            var abc = Configuration.GetSection("ConnectionStrings").Get<string>();
+            services.AddDbContext<CKContext>(options => options.UseNpgsql(Configuration.GetSection("ConnectionStrings").Get<string>()));
+
             services.AddControllers(options =>
                 options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
             services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.Converters.Add(new DateTimeConverter());
             });
+
 
             NativeInjector.Register(services, Configuration, Environment);
 
