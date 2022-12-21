@@ -61,6 +61,24 @@ namespace VoucherCK.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mã code đã được sử dụng..
+        /// </summary>
+        public static string BARCODE_EXISTED {
+            get {
+                return ResourceManager.GetString("BARCODE_EXISTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mã code không được hưởng khuyến mại..
+        /// </summary>
+        public static string BARCODE_NOTFOUND {
+            get {
+                return ResourceManager.GetString("BARCODE_NOTFOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Có lỗi xảy ra..
         /// </summary>
         public static string GeneralError {
@@ -97,11 +115,20 @@ namespace VoucherCK.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mã code không được hưởng khuyến mại..
+        ///   Looks up a localized string similar to Chương trình khuyến mại đã kết thúc..
         /// </summary>
-        public static string VOUCHER_NOTFOUND {
+        public static string VOUCHER_NOT_EXIST {
             get {
-                return ResourceManager.GetString("VOUCHER_NOTFOUND", resourceCulture);
+                return ResourceManager.GetString("VOUCHER_NOT_EXIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chương trình khuyến mại không khả dụng..
+        /// </summary>
+        public static string VOUCHER_RESOURCE_NOTFOUND {
+            get {
+                return ResourceManager.GetString("VOUCHER_RESOURCE_NOTFOUND", resourceCulture);
             }
         }
     }

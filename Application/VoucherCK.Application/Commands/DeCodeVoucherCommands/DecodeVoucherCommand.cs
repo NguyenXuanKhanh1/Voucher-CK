@@ -10,13 +10,11 @@ namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
 {
     public class DecodeVoucherCommand : IRequest<VoucherResultDto>
     {
-        public DecodeVoucherCommand(string barCode, string linkFile)
+        public DecodeVoucherCommand(string barCode)
         {
             BarCode = barCode;
-            LinkFile = linkFile;
         }
 
         public string BarCode { get; }
-        public string LinkFile { get; }
     }
 }
