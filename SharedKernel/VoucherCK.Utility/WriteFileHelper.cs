@@ -5,7 +5,7 @@
         public static async Task WriteFileHelperAsync(string data, string linkFile)
         {
             string pathString = linkFile;
-            var currentDate = new DateTime(2022, 11, 20);
+            var currentDate = DateTime.Now;
 
             string fileName = currentDate.ToString("yyyy-MM-dd") + ".csv";
 

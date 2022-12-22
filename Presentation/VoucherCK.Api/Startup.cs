@@ -112,7 +112,7 @@ namespace VoucherCK.Api
             }
 
             db.Database.EnsureCreated();
-
+            db.Database.Migrate();
             app.UseForwardedHeaders();
             app.UseCors();
 

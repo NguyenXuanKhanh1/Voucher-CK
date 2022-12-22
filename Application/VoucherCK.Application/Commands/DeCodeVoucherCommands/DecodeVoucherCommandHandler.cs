@@ -43,7 +43,7 @@ namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
 
                 if (checkExisted is not null)
                 {
-                    logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{request.BarCode},N/A,Fail,{result.StoreCode},{result.PrizeCode},Mã code đã được sử dụng,";
+                    logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{request.BarCode},N/A,Fail,{result.StoreCode},{result.PrizeCode},BarCode in Use,";
                     WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
                     throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.BARCODE_EXISTED));
@@ -54,7 +54,7 @@ namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
                 if (!File.Exists(fileSource))
                 {
                     logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{request.BarCode},N/A,Fail,{result.StoreCode}," +
-                        $"{result.PrizeCode},Chương trình khuyến mại không khả dụng,";
+                        $"{result.PrizeCode},Voucher File Not Found,";
                     WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
                     throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.VOUCHER_RESOURCE_NOTFOUND));
@@ -65,7 +65,7 @@ namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
                 if (lines is null || !lines.Any())
                 {
                     logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{request.BarCode},N/A,Fail,{result.StoreCode}," +
-                        $"{result.PrizeCode},Chương trình khuyến mại đã kết thúc,";
+                        $"{result.PrizeCode},No Voucher,";
                     WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
                     throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.VOUCHER_NOT_EXIST));
@@ -81,7 +81,7 @@ namespace VoucherCK.Application.Commands.DeCodeVoucherCommands
                     File.WriteAllLines(fileSource, lines.ToArray());
 
                     logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{request.BarCode},{voucherData},Fail,{result.StoreCode}," +
-                        $"{result.PrizeCode},Voucher đã được sử dụng,";
+                        $"{result.PrizeCode},Voucher duplicate,";
                     WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
                     throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.USED_VOUCHER));
