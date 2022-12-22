@@ -103,13 +103,15 @@ namespace VoucherCK.Api
 
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, CKContext db)
         {
             var pathBase = Configuration["PathBase"];
             if (!string.IsNullOrEmpty(pathBase))
             {
                 app.UsePathBase(pathBase);
             }
+
+            db.Database.EnsureCreated();
 
             app.UseForwardedHeaders();
             app.UseCors();

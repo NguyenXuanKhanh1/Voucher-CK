@@ -135,6 +135,9 @@
   <data name="UNDEFINED_MESSAGE" xml:space="preserve">
     <value>Lỗi chưa được định nghĩa.</value>
   </data>
+  <data name="USED_VOUCHER" xml:space="preserve">
+    <value>Voucher đã được sử dụng, vui lòng thử lại.</value>
+  </data>
   <data name="VOUCHER_NOT_EXIST" xml:space="preserve">
     <value>Chương trình khuyến mại đã kết thúc.</value>
   </data>

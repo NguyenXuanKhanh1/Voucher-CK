@@ -10,5 +10,6 @@ namespace VoucherCK.Application.Repositories
     {
         Task<BarCodeRedeems> CreateAsync(BarCodeRedeems entity);
         BarCodeRedeems FindBarcodeAsync(string barcode);
+        BarCodeRedeems FindVoucherAsync(string voucher);
     }
 }

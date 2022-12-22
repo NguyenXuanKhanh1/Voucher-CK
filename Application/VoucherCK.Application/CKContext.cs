@@ -11,6 +11,9 @@ namespace VoucherCK.Application
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<BarCodeRedeems>().HasIndex(u => u.Voucher).IsUnique();
+            modelBuilder.Entity<BarCodeRedeems>().HasIndex(u => u.Barcode).IsUnique();
+
             modelBuilder.UseSerialColumns();
         }
 

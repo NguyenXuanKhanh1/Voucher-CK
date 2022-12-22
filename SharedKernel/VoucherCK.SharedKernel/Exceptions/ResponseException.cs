@@ -1,5 +1,4 @@
-﻿//using VoucherCK.Resource;
-using VoucherCK.Resource;
+﻿using VoucherCK.Resource;
 using VoucherCK.SharedKernel.Interfaces;
 
 namespace VoucherCK.SharedKernel.Exceptions

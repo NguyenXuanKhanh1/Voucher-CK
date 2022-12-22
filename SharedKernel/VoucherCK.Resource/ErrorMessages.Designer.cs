@@ -115,6 +115,15 @@ namespace VoucherCK.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Voucher đã được sử dụng, vui lòng thử lại..
+        /// </summary>
+        public static string USED_VOUCHER {
+            get {
+                return ResourceManager.GetString("USED_VOUCHER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chương trình khuyến mại đã kết thúc..
         /// </summary>
         public static string VOUCHER_NOT_EXIST {

@@ -26,5 +26,11 @@ namespace VoucherCK.Application.Repositories
             var result = _cKContext.BarCodeRedeem.Where(x => x.Barcode == barcode).FirstOrDefault();
             return result;
         }
+
+        public BarCodeRedeems FindVoucherAsync(string voucher)
+        {
+            var result = _cKContext.BarCodeRedeem.Where(x => x.Voucher == voucher).FirstOrDefault();
+            return result;
+        }
     }
 }

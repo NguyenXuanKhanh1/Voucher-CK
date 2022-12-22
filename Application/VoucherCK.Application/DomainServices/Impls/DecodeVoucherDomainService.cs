@@ -40,7 +40,7 @@ namespace VoucherCK.Application.DomainServices.Impls
 
             if (deCodeVoucherResult != 0)
             {
-                logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{barcode},Fail,N/A,N/A,";
+                logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{barcode},N/A,Fail,N/A,N/A,";
                 await WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
                 throw new ResponseException(NotFoundError.Error(NotFoundErrorEnum.BARCODE_NOTFOUND));
@@ -54,8 +54,6 @@ namespace VoucherCK.Application.DomainServices.Impls
                 IsWarrior = Convert.ToInt32(rtrNPlay.ToString()),
                 Result = 0
             };
-            logContent = $"{currentDate.ToString("yyyy-MM-dd HH:mm:ss")},'{barcode},Success,{result.StoreCode},{result.PrizeCode},";
-            await WriteFileHelper.WriteFileHelperAsync(logContent, linkFile);
 
             return result;
         }

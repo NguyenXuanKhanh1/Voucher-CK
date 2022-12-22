@@ -5,7 +5,9 @@
         public static async Task WriteFileHelperAsync(string data, string linkFile)
         {
             string pathString = linkFile;
-            string fileName = DateTime.Now.ToString("yyyy-MM-dd") + ".csv";
+            var currentDate = new DateTime(2022, 11, 20);
+
+            string fileName = currentDate.ToString("yyyy-MM-dd") + ".csv";
 
             System.IO.Directory.CreateDirectory(pathString);
             pathString = Path.Combine(pathString, fileName);
@@ -13,7 +15,7 @@
             if (!File.Exists(pathString))
             {
                 using StreamWriter file = new(pathString);
-                var template = "Time,BarCode,Status,StoreCode,PrizeCode";
+                var template = "Time,BarCode,Voucher,Status,StoreCode,PrizeCode,Message";
                 await file.WriteLineAsync(template);
                 await file.WriteLineAsync(data);
             }
